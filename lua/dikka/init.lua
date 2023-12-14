@@ -768,6 +768,13 @@ require('lazy').setup({
 })
 -- require("dikka.debugger")
 
+vim.api.nvim_create_autocmd("TextYankPost", {
+    pattern = "*",
+    callback = function()
+        vim.highlight.on_yank({higroup="IncSearch", timeout=250})
+    end,
+})
+
 vim.cmd('Dotenv')
 if vim.env.DISABLE_COPILOT == "true" then
     print('Disabling Copilot')
