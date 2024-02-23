@@ -675,9 +675,9 @@ require('lazy').setup({
     {
         'IndianBoy42/tree-sitter-just',
     },
-    {
-        'wakatime/vim-wakatime',
-    },
+    -- {
+    --     'wakatime/vim-wakatime',
+    -- },
     {
         'laytan/tailwind-sorter.nvim',
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
